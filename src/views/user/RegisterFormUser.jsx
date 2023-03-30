@@ -15,8 +15,8 @@ const RegisterForm = (props) => {
     const [errMsg, setErrMsg] = useState("");
     const handleSubmit = async (e) => {
    
-        const validateEmailFormat = EMAIL_REGEX.test(email);
-        const validatePasswordFormat = PWD_REGEX.test(password);
+        // const validateEmailFormat = EMAIL_REGEX.test(email);
+        // const validatePasswordFormat = PWD_REGEX.test(password);
 
          
         if (!firstName || !lastName || !email || !password || !auxPassword){
@@ -61,7 +61,7 @@ const RegisterForm = (props) => {
 
             <p>{errMsg}</p>
 
-            
+
         <div class="card text-center m-5"  style={{maxWidth: '600px'}}>
             <div class="card-body m-5 px-5">
                 <h5 class="card-title text-uppercase text-center mb-5">Add New Teammate</h5>
