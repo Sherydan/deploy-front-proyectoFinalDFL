@@ -37,10 +37,10 @@ const RegisterFormStore = () => {
         return;
     }
     try {
-      const response = await axios.post(
-          REGISTER_STORE_URL,
-        { storeName, rut, email, industry, address, password }
-      );
+      // const response = await axios.post(
+      //     REGISTER_STORE_URL,
+      //   { storeName, rut, email, industry, address, password }
+      // );
     
     setFirstName("");
     setLastName("");
@@ -63,8 +63,12 @@ const RegisterFormStore = () => {
   };
 
   return (
+    
       
   <div  class="d-flex align-items-center justify-content-center bg-image">
+    <p>{firstName}</p>
+    <p>{lastName}</p>
+    <p>{errMsg}</p>
     <div class="card text-center m-5"  style={{maxWidth: '600px'}}>
       <div class="card-body m-5 px-5">
         <h5 class="card-title text-uppercase text-center mb-5">CREATE USER ACCOUNT</h5>

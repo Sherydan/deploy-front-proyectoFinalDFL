@@ -5,7 +5,7 @@ const RegisterForm = (props) => {
     
     // const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     // const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-    const REGISTER_USER_URL="";
+    // const REGISTER_USER_URL="";
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName]= useState("");
@@ -58,7 +58,10 @@ const RegisterForm = (props) => {
         
 
         <div  class=" col d-flex align-items-center justify-content-center bg-image bg-secondary">
+
             <p>{errMsg}</p>
+
+            
         <div class="card text-center m-5"  style={{maxWidth: '600px'}}>
             <div class="card-body m-5 px-5">
                 <h5 class="card-title text-uppercase text-center mb-5">Add New Teammate</h5>
