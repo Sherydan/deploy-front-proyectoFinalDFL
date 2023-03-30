@@ -2,9 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 
 const RegisterFormStore = () => {
-  const EMAIL_REGEX = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
-  const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-  const REGISTER_STORE_URL="";
+  // const EMAIL_REGEX = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
+  // const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+  // const REGISTER_STORE_URL="";
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName]= useState("");
@@ -22,8 +22,8 @@ const RegisterFormStore = () => {
 
   const handleSubmit = async (e) => {
    
-    const validateEmailFormat = EMAIL_REGEX.test(email);
-    const validatePasswordFormat = PWD_REGEX.test(password);
+    const validateEmailFormat = true;
+    const validatePasswordFormat = true;
 
     if (!storeName || !rut || !email || !industry || !address || !password || !auxPassword){
       setErrMsg("All the fields are required ")
