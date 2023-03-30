@@ -15,8 +15,8 @@ const RegisterForm = (props) => {
     const [errMsg, setErrMsg] = useState("");
     const handleSubmit = async (e) => {
    
-        // const validateEmailFormat = EMAIL_REGEX.test(email);
-        // const validatePasswordFormat = PWD_REGEX.test(password);
+        const validateEmailFormat = true;
+        const validatePasswordFormat = true;
 
          
         if (!firstName || !lastName || !email || !password || !auxPassword){
